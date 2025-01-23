@@ -1,0 +1,6 @@
+@NowSoft.Api_HostAddress = http://localhost:5294
+
+GET {{NowSoft.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
