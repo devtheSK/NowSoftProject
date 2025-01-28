@@ -10,5 +10,7 @@ namespace NowSoft.Infrastructure.Services
     public interface IJwtTokenGenerator
     {
         string GenerateToken(User user);
+
+        int ValidateToken(string token);
     }
 }

@@ -13,9 +13,9 @@ namespace NowSoft.Application.Queries
     public class BalanceQueryHandler : IRequestHandler<BalanceQuery, BalanceResponse>
     {
         private readonly AppDbContext _context;
-        private readonly IJwtTokenValidator _jwtTokenValidator;
+        private readonly IJwtTokenGenerator _jwtTokenValidator;
 
-        public BalanceQueryHandler(AppDbContext context, IJwtTokenValidator jwtTokenValidator)
+        public BalanceQueryHandler(AppDbContext context, IJwtTokenGenerator jwtTokenValidator)
         {
             _context = context;
             _jwtTokenValidator = jwtTokenValidator;

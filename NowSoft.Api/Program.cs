@@ -28,8 +28,6 @@ builder.Services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies([typeof(
 
 
 builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
-builder.Services.AddSingleton<IJwtTokenValidator, JwtTokenValidator>();
-
 
 
 builder.Services.AddControllers();
